@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Categories">Categories</string>
+    <string name="menu_my_recipes">My Recipes</string>
+    <string name="menu_add_new_recipe">Add new Recipe</string>
+    <string name="menu_categories">Main</string>
+    <string name="menu_logout">Logout</string>
+    <string name="login_userAskToRegister">if you are not a member please click here  for signup</string>
+    <string name="Login">Login</string>
+    <string name="login_sms">Login with sms</string>
+    <string name="signup">Sign up</string>
+    <string name="user_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="password_verification">Password verification</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="choose_icon_image">Choose icon image</string>
+    <string name="button">Button</string>
+    <string name="icon_image_review">Icon review will present here after you choose</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="add">Add</string>
+    <string name="instructions">Instructions:</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="upload">Upload</string>
+    <string name="pick_images">Pick Images</string>
+    <string name="choose_icon">Choose icon</string>
+    <string name="images_review">Images review</string>
+    <string name="my_recipes_collection">Recipes</string>
+    <string name="todo">Loader  view</string>
+    <string name="see_you_soon">See You Soon :)</string>
+    <string name="chef_hat_animation">chef animation</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="top_msg">category name</string>
+    <string name="recipe_image">recipe image</string>
+    <string name="name">Name</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="category_name">Category name</string>
+    <string name="string_category_name">Category name </string>
+    <string name="total_recipes">Total recipes</string>
+    <string name="previod_image">previod image</string>
+    <string name="next_image">Next image</string>
+    <string name="by_name">By name</string>
+    <string name="writer_name">writer name</string>
+    <string-array name="categories">
+        <item>Bread</item>
+        <item>Cheeses</item>
+        <item>Salad</item>
+        <item>Meat</item>
+        <item>Chicken</item>
+        <item>Fish</item>
+        <item>Rice</item>
+        <item>Pizza</item>
+        <item>Pasta</item>
+        <item>Soup</item>
+        <item>Desserts</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

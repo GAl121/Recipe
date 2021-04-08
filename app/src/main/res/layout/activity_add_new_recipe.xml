@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".AddNewRecipeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/showRecipe_bt_previous"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_navigate_before"
+                    android:visibility="gone"/>
+
+                <ImageSwitcher
+                    android:id="@+id/image_switcher"
+                    android:layout_width="300dp"
+                    android:layout_height="166dp"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/showRecipe_bt_next"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_navigate_next"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/pickImageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/pick_images"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPickImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/choose_icon"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <ImageView
+                    android:id="@+id/myIconView"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="end"
+                    android:background="@color/white"
+                    android:contentDescription="@string/icon_image_review"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/recipe_name"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:ems="15"
+                android:hint="@string/recipe_name"
+                android:inputType="textPersonName"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/category_spinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:background="#8F8989" />
+
+            <TextView
+                android:id="@+id/Ingredients_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:text="@string/ingredients"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/textinnew"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="5"
+                    android:autofillHints=""
+                    android:ems="15"
+                    android:hint="@string/ingredient"
+                    android:inputType="text"
+                    android:textSize="17sp" />
+
+
+                <Button
+                    android:id="@+id/addbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/add"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/method_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/instructions"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/textin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="5"
+                    android:autofillHints=""
+                    android:ems="15"
+                    android:hint="@string/ingredient"
+                    android:inputType="text"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/addbtn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/add"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/upload_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:text="@string/upload"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>
